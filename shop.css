@@ -36,8 +36,8 @@ body{
 	background: url(patt.png)}
 
 .header{
-opacity: 0.7;
-	background: white;
+	background: rgba(255,255,255,.6);
+
 	height: 100px;
 	width: 100%;
 }
@@ -46,7 +46,12 @@ opacity: 0.7;
 	width: 1100px;
 	margin: 0 auto;
 }
-.col1{
+.row{
+	height: 100px;
+	width: 1100px;
+	margin: 0 auto;
+}
+.col-md-3{
 	margin: 0px;
 	width: 300px;
 	height: 100px;
@@ -57,7 +62,7 @@ opacity: 0.7;
 .img1{
 	padding: 35px;}
 
-.col2{
+.col-md-6{
 	width: 500px;
 	height: 100px;
 	float: left;
@@ -65,6 +70,9 @@ opacity: 0.7;
 .menu{
 	padding: 0px;
 	margin-top: 35px;
+}
+.main-menu{
+	display: inline-block;
 }
 	
 .menu ul{
@@ -83,7 +91,7 @@ opacity: 0.7;
 	background: white;
 }
 
-.one .submenu{
+.main-menu .submenu{
 	position: absolute;
 }
 
@@ -96,44 +104,65 @@ opacity: 0.7;
 	text-align: center;
 	line-height:45px;
 	color: #2e70ba;
-	
+} 
+.submenu a{
+	background: #2d71b8;
+	color: #ffffff;
+	width: 240px;
+	text-align: left;
+	padding: 10px;
 }
 .menu a:hover{
     text-decoration: none;
 	display: block;
-	background: #f0f5fa;
+	background: #2d71b8;
+	color: #ffffff;
 	border-bottom: 2px solid #2c71b8;
-	width:130px;
+	width:120px;
 	height: 50px;
 	text-align: center;
 	line-height:45px;
-	color: #2e70ba;
 	}
-.one.submenu li:hover{
+.submenu a:hover{
+	    width: 240px;
+		background:#ffffff;
+		color: #2d71b8;
+		text-align: left;
+	}
+.submenu li{
+	width: 240px;
+	background: #2d71b8;
+	color: #ffffff;	
+}	
+.main-menu.submenu li:hover{
 	text-decoration: none;
 	display: block;
+	
 	}	
-.one ul li:hover .submenu {
+.main-menu ul li:hover .submenu {
     display: block;	}
 
-.col3{
+.col-md-2{
 	height: 100px;
 	width: 155px;
 	float: left;
 	text-align: center;
-}
+	background: url(icon 4.png);}
+
 input{
 	border: 2px solid #2c71b8;
 	margin-top: 50px;
+	background: rgba(255,255,255,.6);
 }
-.col4{
+.col-md-1{
+	background: url(icon 1.png);
 	height: 100px;
 	width: 50px;
 	float: left;
 }
 .img2{
-	background: white;
 	margin-top: 50px;
 	padding-left: 10px;
+	background: #ffffff;
 }    
 
